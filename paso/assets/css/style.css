@@ -1596,7 +1596,9 @@ Home Company Area Css
 .home-company-area .company-img {
   position: relative;
   z-index: 1;
+  width: 100%;
 }
+
 
 .home-company-area .company-img::before {
   position: absolute;
@@ -1604,7 +1606,7 @@ Home Company Area Css
   width: 350px;
   height: 100px;
   background: #e6335a;
-  z-index: -1;
+  z-index: 2;
   left: -30px;
   top: -30px;
   border-radius: 4px;
@@ -1616,7 +1618,7 @@ Home Company Area Css
   width: 350px;
   height: 100px;
   background: #051242;
-  z-index: -1;
+  z-index: 2;
   right: -30px;
   bottom: -30px;
   border-radius: 4px;
