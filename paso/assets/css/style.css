@@ -451,7 +451,7 @@ Go Top Style*/
   border: 1px solid #1d42d9;
 }
 
-.box-btn::before {
+/* .box-btn::before {
   content: "";
   position: absolute;
   top: 0;
@@ -475,11 +475,20 @@ Go Top Style*/
   z-index: -1;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+} */
+
+.apply-btn{
+  background-color: transparent;
+  border: 2px solid #fff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: #fff;
 }
 
 .box-btn.border-btn {
   background-color: transparent;
   border: 1px solid #fff;
+  border-image: linear-gradient(to right, #051242, orange);
 }
 
 .box-btn:hover {
@@ -1490,6 +1499,7 @@ Service Area Css
   border-radius: 4px;
   z-index: 1;
   overflow: hidden;
+  height: 500px;
   -webkit-box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
           box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
 }
@@ -1531,7 +1541,7 @@ Service Area Css
   right: 100%;
   width: 100%;
   height: 100%;
-  background: url(../images/service/hover.png) no-repeat;
+  background: url(../images/service/hover.png) cover;
   z-index: -1;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
@@ -1986,6 +1996,10 @@ Home Case Area Css
   color: #1d42d9;
 }
 
+.hidden{
+  display: none;
+  height: 0 !important;
+}
 /*
 Feature Area Css
 ======================================================*/
@@ -4730,7 +4744,7 @@ FAQ Area Css
 }
 
 .faq-area .section-tittle h2 {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 .faq-area .faq-accordion .accordion {
@@ -4740,7 +4754,7 @@ FAQ Area Css
 
 .faq-area .faq-accordion .accordion .accordion-item {
   display: block;
-  margin-bottom: 12px;
+  margin-bottom: 101px !important;
   position: relative;
 }
 
