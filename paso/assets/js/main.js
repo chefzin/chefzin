@@ -276,10 +276,26 @@ jQuery(function ($) {
     $('.case-list').isotope({
         itemSelector: '.item'
     });
+    
+    // Set initial style to hide items that don't belong to "Bookings"
+    $('.case-list .item:not(.bookings)').addClass('hidden');
+    
+    // Trigger click event on the "Bookings" tab to load its content initially
+    $('.all-case li[data-filter=".bookings"]').addClass('active');
+    
+    // Handle category filter click events
     $('.all-case li').click(function() {
         $('.all-case li').removeClass('active');
         $(this).addClass('active');
         var selector = $(this).attr('data-filter');
+    
+        // Hide all items
+        $('.case-list .item').addClass('hidden');
+    
+        // Show items that belong to the selected category
+        $('.case-list .item' + selector).removeClass('hidden');
+    
+        // Update Isotope filter
         $('.case-list').isotope({
             filter: selector
         });
